@@ -1,8 +1,6 @@
 ## CVE-2019-6340 — Drupal RESTful Web Services RCE
 
-Standalone Python exploit for CVE-2019-6340.
-
-Python implementation of the remote code execution exploit for CVE-2023-26360, based on analysis of the [Metasploit module](https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/unix/webapp/drupal_restws_unserialize.rb) and the prior work by [leonjza](https://www.exploit-db.com/exploits/46459).
+Python implementation of the remote code execution exploit for [CVE-2019-6340](https://nvd.nist.gov/vuln/detail/CVE-2019-6340), based on analysis of the [Metasploit module](https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/unix/webapp/drupal_restws_unserialize.rb) and the prior work by [leonjza](https://www.exploit-db.com/exploits/46459).
 
 **Key difference from EDB-46459:** uses POST instead of GET,
 bypassing Drupal's page cache — can be executed multiple times
